@@ -1,0 +1,50 @@
+Директория проекта:
+bash
+cd ~/onco-ai-demo
+Посмотр структуры:
+bash
+ls -la
+
+Запуск проекта локально:
+bash
+# Запустить dev сервер
+npm run dev
+# Открыть в браузере
+xdg-open http://localhost:3000 2>/dev/null || \
+В браузере
+http://localhost:3000
+https://github.com/Borbargit/onco-ai-demo
+
+SSH
+Проверка существующих ключей:
+bash
+ls -la ~/.ssh/
+#Your identification has been saved in /home/boris/.ssh/id_ed25519
+#Your public key has been saved in /home/boris/.ssh/id_ed25519.pub
+#The key fingerprint is: SHA256:97+14H1rnOtDjGLpZ13WnDw6WwP8im1n2VhEBxchxHc b.l.baryshnikov@gmail.com
+Публичный ключ:
+bash
+cat ~/.ssh/id_ed25519.pub
+Проверка подключения:
+bash
+ssh -T git@github.com
+
+Firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBAFGoZKJs25UZzQypsqZoAcwqotrqbljo",
+  authDomain: "onco-ai-demo.firebaseapp.com",
+  projectId: "onco-ai-demo",
+  storageBucket: "onco-ai-demo.firebasestorage.app",
+  messagingSenderId: "784330687204",
+  appId: "1:784330687204:web:bf338dd4114e7e03c3e2f1"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
